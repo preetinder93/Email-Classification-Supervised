@@ -118,7 +118,7 @@ imap.logout()
 print("Email Parsing Ends")
 
 # Create dataframe
-df = pd.DataFrame(mail_list, columns =['ID', 'Sender', 'Subject', 'Body', 'Category'])
+df = pd.DataFrame(mail_list, columns =['id', 'sender', 'subject', 'body', 'category'])
 #print(df)
 df.to_csv('mail_list_since_given_date.csv', sep='|', index=False)
       

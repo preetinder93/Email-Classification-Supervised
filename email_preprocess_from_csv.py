@@ -47,18 +47,18 @@ def preprocess_from_csv(csv_file = "C:\\Users\\preet\\workspace-neon\\Email-Clas
     
     
     # Plot Bar to show how many emails from whom
-    email_count = data["Category"].value_counts()
+    email_count = data["category"].value_counts()
     indices = email_count.index
-    count = pd.DataFrame(email_count, columns = ["Category"])
+    count = pd.DataFrame(email_count, columns = ["category"])
     count["Category names"] = indices
-    barplot(df = count[:40], X = "Category", Y = "Category names", figsize = (7, 8), color = 'b', orient = 'h', ylabel = "Folders", xlabel = "Count", font_scale = 1.2, rotation = 90)
+    barplot(df = count[:40], X = "category", Y = "Category names", figsize = (7, 8), color = 'b', orient = 'h', ylabel = "Folders", xlabel = "Count", font_scale = 1.2, rotation = 90)
     
     
     # Pandas ".iloc" expects row_indexer, column_indexer  
     #X = data.iloc[:,:-1].values
-    X = data['Body']
+    X = data['body']
     # Now let's tell the dataframe which column we want for the target/labels.  
-    y = data['Category']
+    y = data['category']
     
     
 

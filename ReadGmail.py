@@ -132,7 +132,7 @@ for from_address in from_address_list:
     print(str(from_address)+" - ends")
 
 # Create dataframe
-df = pd.DataFrame(mail_list, columns =['From', 'Subject', 'Body', 'Category'])
+df = pd.DataFrame(mail_list, columns =['from', 'subject', 'body', 'category'])
 #print(df)
 df.to_csv('C:\\Users\\preet\\workspace-neon\\Email-Classification-Supervised\\mail_list.csv')
       
