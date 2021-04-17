@@ -13,7 +13,6 @@ username = "*******@gmail.com"
 password = "*********"
 imap_url = "imap.gmail.com"
 
-
 def cleanhtml(raw_html):
   cleanr = re.compile('<.*?>|&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-f]{1,6});')
   cleantext = re.sub(cleanr, '', raw_html)

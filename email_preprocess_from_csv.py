@@ -8,7 +8,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectPercentile, f_classif
 
-
 def barplot(df, X, Y, figsize, color, orient, ylabel, xlabel, font_scale, rotation):
     f, ax = plt.subplots(figsize=figsize)
     sns.set_color_codes("muted")
